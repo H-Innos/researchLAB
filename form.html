@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEB Research Innovation Site - Congratulations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(237, 232, 232);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            background-color: #2ecd1c;
+            color: #000000;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 2em;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="file"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .checkbox-group {
+            margin-bottom: 20px;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SEB Research and Innovation LAB</h1>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Please fill in your personal information!</h2>
+        <form>
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" placeholder="Enter your surname">
+            <label for="family-name">Family name:</label>
+            <input type="text" id="family-name" name="family-name" placeholder="Enter your family name">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email">
+            <label for="email">Phone number:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your phone number">
+            <br>
+            <label for="education-status">Select your education status</label>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="education-status" value="bachelor-3rd-year">
+                    3rd year Bachelor's
+                </label>
+                <label>
+                    <input type="checkbox" name="education-status" value="masters-1st-year">
+                    1st year Master's
+                </label>
+                <label>
+                    <input type="checkbox" name="education-status" value="masters-2nd-year">
+                    2nd year Master's
+                </label>
+            </div>
+            <label for="study-location">Select your place of studying</label>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="study-location" value="tallinn">
+                    Tallinn
+                </label>
+                <label>
+                    <input type="checkbox" name="study-location" value="tartu">
+                    Tartu
+                </label>
+                <label>
+                    <input type="checkbox" name="study-location" value="riga">
+                    Riga
+                </label>
+                <label>
+                    <input type="checkbox" name="study-location" value="vilnius">
+                    Vilnius
+                </label>
+            </div>
+            <label for="secondary-topics">Select your preferred secondary topics, if any</label>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="secondary-topics" value="risk-management">
+                    Evaluating the Effectiveness of Risk Management Strategies in Commercial Banks
+                </label>
+                <label>
+                    <input type="checkbox" name="secondary-topics" value="big-data">
+                    Big Data analysis for Customer Relations Teams of 2023-2024
+                </label>
+                <label>
+                    <input type="checkbox" name="secondary-topics" value="digital-transformation">
+                    The Impact of Digital Transformation on Traditional Banking
+                </label>
+            </div>
+            <label for="about-yourself">Tell us more about yourself:</label>
+            <textarea id="about-yourself" name="about-yourself" rows="4" placeholder="Write a brief introduction about yourself..."></textarea>
+            <label for="cv-upload">Upload your CV:</label>
+            <input type="file" id="cv-upload" name="cv-upload">
+            <a href="popup.html"><button type="button">Submit</button></a>
+        </form>
+    </div>
+</body>
+</html>

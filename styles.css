@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('thesis-background.png');
+    background-size: cover;
+    background-position: center;
+}
+ 
+.quiz-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+ 
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(237, 232, 232);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+ 
+header h1 {
+    margin: 0;
+}
+ 
+header p {
+    margin: 0;
+}
+ 
+.question-section {
+    margin-top: 20px;
+}
+ 
+.question-section h2 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+ 
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+header {
+    background-color: #2ecd1c;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+ 
+.answer {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+ 
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+ 
+.previous-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+ 
+.next-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}

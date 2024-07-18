@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEB Research Innovation Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(237, 232, 232);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .quiz-container {
+            display: flex;
+            border-radius: 20px;
+            justify-content: center;
+            
+            margin-bottom: 20px;
+        }
+        .quiz-container button {
+            font-weight: 600;
+            font-size: large;
+            padding: 10px 20px;
+            height: 80px;
+            width: 500px;
+            background-color: #2ecd1c;
+            color: white;
+            justify-content: center;
+            border: none;
+            box-shadow: #000000;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .search-bar input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .filters {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .filters select {
+            width: 32%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .job-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .job-box {
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .job-box h3 {
+            margin-top: 0;
+        }
+        .job-box p {
+            color: #555;
+        }
+        .job-box button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2ecd1c;
+            color: #000000;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .box {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .box button {
+            background-color: #005bbb;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .box button:hover {
+            background-color: #004999;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 2em;
+        }
+
+        .success-stories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .story {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .story img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .story button {
+            background-color: #005bbb;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .story button:hover {
+            background-color: #004999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SEB Research and Innovation LAB</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="grid">
+            <div class="box">
+                <h3>Combine thesis writing with SEB internship</h3>
+                <button>More Information</button>
+            </div>
+            <div class="box">
+                <h3>Gain a skill and get a certificate</h3>
+                <button>More Information</button>
+            </div>
+            <div class="box">
+                <h3>Enjoy a flexible schedule</h3>
+                <button>More Information</button>
+            </div>
+            <div class="box">
+                <h3>Get a funding for your thesis research</h3>
+                <button>More Information</button>
+            </div>
+        </div>
+        <h2>Success Stories</h2>
+        <div class="success-stories">
+            <div class="story">
+                <img src="student1.png" alt="Group thesis on Digital Transformation">
+                <h4>Group thesis on "The Impact of Digital Transformation on Traditional Banking"</h4>
+                <p>In this research authors explore how SEB has adapted to digital transformation trends, including the
+                    adoption of fintech solutions, online banking, mobile applications, and digital customer service
+                    platforms.</p>                    <br>
+
+                <button>Read More</button>
+            </div>
+            <div class="story">
+                <img src="student2.png" alt="Anna Smith on Risk Management">
+                <h4>Anna Smith on "Evaluating the Effectiveness of Risk Management Strategies in Commercial Banks"</h4>
+                <p>This research examines the risk management frameworks employed by SEB, focusing on how they manage
+                    credit risk, market risk, operational risk, and compliance risk.</p>
+                <button>Read More</button>
+            </div>
+            <div class="story">
+                <img src="student3.png" alt="Filip Tree on Customer Relationship Management">
+                <h4>Filip Tree on "The Role of Customer Relationship Management in Enhancing Customer Loyalty in Banks"
+                </h4>
+                <p>Author investigates the CRM strategies implemented by SEB to enhance customer loyalty and
+                    satisfaction.</p>                    <br>
+
+                <button>Read More</button>
+            </div>
+        </div>
+
+        <h2>Meet our mentors</h2>
+        <div class="success-stories">
+            <div class="story">
+                <img src="teacher1.png" alt="Group thesis on Digital Transformation">
+                <h4>Dr. John Thomas</h4>
+                <p>In this research authors explore how SEB has adapted to digital transformation trends, including the
+                    adoption of fintech solutions, online banking, mobile applications, and digital customer service
+                    platforms.</p>
+                    <br>
+                    <br>
+
+                <button>Read More</button>
+            </div>
+            <div class="story">
+                <img src="teacher2.webp" alt="Anna Smith on Risk Management">
+                <h4>Anna Smith</h4>
+                <p>This research examines the risk management frameworks employed by SEB, focusing on how they manage
+                    credit risk, market risk, operational risk, and compliance risk.</p>
+                <button>Read More</button>
+            </div>
+            <div class="story">
+                <img src="teacher3.webp" alt="Filip Tree on Customer Relationship Management">
+                <h4>Filip Tree
+                </h4>
+                <p>Author investigates the CRM strategies implemented by SEB to enhance customer loyalty and
+                    satisfaction. This research examines the risk management frameworks employed by SEB, focusing on how they manage
+                    credit risk, market risk, operational risk, and compliance risk.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="quiz-container">
+            <a href="quiz.html"><button>Take a quiz to find your ideal match!</button></a>
+
+        </div>
+        <br>
+        <br>
+        
+
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search for topics...">
+            <button>Search</button>
+        </div>
+        <div class="filters">
+            <select>
+                <option value="">Location</option>
+                <option value="new-york">Tallinn</option>
+                <option value="san-francisco">Tartu</option>
+                <option value="chicago">Riga</option>
+                <option value="chicago">Vilnius</option>
+            </select>
+            <select>
+                <option value="">Speciliality</option>
+                <option value="engineering">Engineering</option>
+                <option value="marketing">Marketing</option>
+                <option value="design">Design</option>
+
+            </select>
+            <select>
+                <option value="">Langauge</option>
+                <option value="engineering">English</option>
+                <option value="marketing">Estonian</option>
+                <option value="design">Latvian</option>
+                <option value="design">Lithuanian</option>
+            </select>
+            
+        </div>
+
+        <div class="job-grid">
+            <div class="job-box">
+                <h3>The Impact of Digital Transformation on Traditional Banking</h3>
+                <p>Supervisor: Dr. John Smith</p>
+                <p>Location: Tartu</p>
+                <a href="details.html"><button>Details</button></a>
+                <button>Apply</button>            
+            </div>
+            <div class="job-box">
+                <h3>Evaluating the Effectiveness of Risk Management Strategies in Commercial Banks</h3>
+                <p>Supervisor: Tuan Johnston</p>
+                <p>Location: Vilnius</p>
+                <button>Details</button>
+                <button>Apply</button>            </div>
+            <div class="job-box">
+                <h3>Big Data analysys for Customer Relations Teams of 2023-2024</h3>
+                <p>Supervisor: Tuan Johnston</p>
+                <p>Location: Tallinn</p>
+                <button>Details</button>
+                <button>Apply</button>
+            </div>
+            <div class="job-box">
+                <h3>The Role of Customer Relationship Management in Enhancing Customer Loyalty in Banks</h3>
+                <p>Supervisor: Tuan Johnston</p>
+                <p>Location: Riga</p>
+                <button>Details</button>
+                <button>Apply</button>
+            </div>
+            <div class="job-box">
+                <h3>Big Data analysys for Customer Relations Teams of 2023-2024</h3>
+                <p>Supervisor: Tuan Johnston</p>
+                <p>Location: Tartu</p>
+                <button>Details</button>
+                <button>Apply</button>            </div>
+            <div class="job-box">
+                <h3>Evaluating the Effectiveness of Risk Management Strategies in Commercial Banks</h3>
+                <p>Supervisor: Tuan Johnston</p>
+                <p>Location: Vilnius</p>
+                <button>Details</button>
+                <button>Apply</button>            
+            </div>
+            <div class="job-box">
+                <h3>The Impact of Digital Transformation on Traditional Banking</h3>
+                <p>Supervisor: Tuan Johnston</p>
+                <p>Location: Tallinn</p>
+                <button>Details</button>
+                <button>Apply</button>
+            </div>
+            <div class="job-box">
+                <h3>The Role of Customer Relationship Management in Enhancing Customer Loyalty in Banks</h3>
+                <p>Supervisor: Tuan Johnston</p>
+                <p>Location: Riga</p>
+                <button>Details</button>
+                <button>Apply</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
